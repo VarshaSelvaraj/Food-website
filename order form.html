@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Comic Sans MS;
+  background-image: url("back.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+  opacity: 0.9;
+  font-family: Comic Sans MS;
+  
+
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.bg-img {
+  
+  background-image: url("back.jpg");
+  min-height: 750px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+
+
+.container {
+  height: 675px;
+  width: 45%;
+  position: absolute;
+  right: 1000;
+  margin: 20px;
+  max-width:2000px;
+  padding: 16px;
+  background-color: white;
+}
+
+
+
+</style>
+</head>
+<body>
+<div>
+<form action="/action_page.php" class="container" >
+
+<fieldset>
+<legend>Order Enquiry Details</legend>
+<fieldset>
+<legend>Personal Details</legend>
+  <label for="fname">First name &emsp13;&emsp13;:</label>
+  <input type="text" id="fname" name="fname" placeholder="Enter your firstname"><br><br>
+<label for="lname">Last name &emsp13;&emsp13;:</label>
+  <input type="text" id="lname" name="lname" placeholder="Enter your lastname"><br><br>
+<label for="email">Email &emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;:</label>
+<input type="text" id="email" name="email" placeholder="Enter your email address"><br><br>
+<label for="phn">Contact No. :</label>
+  <input type="number" id="phn" name="phn" placeholder="Enter your contact no."><br>
+
+</fieldset><br>
+
+<fieldset>
+<legend>Delivery Details</legend>
+<label for="deladdress">Delivery Address :</label>
+<textarea name="message" rows="3" cols="20" placeholder="Enter your address"></textarea><br><br>
+<label for="pin">Pin Code :</label>
+<input type="number" id="pin" name="pin" placeholder="Enter your pin code"><br><br>
+  <label for="add">Address Type :</label>
+  <select id="type" name="add">
+    <option value="home">Home</option>
+    <option value="off">Office</option>
+    <option value="other">Others</option>
+  </select>
+</fieldset><br>
+
+<fieldset>
+<legend>Payment Details</legend>
+<label for="mode">Mode of Payment :</label><br>
+<input type="radio" id="visa" name="pay" value="visa">
+  <label for="visa">Visa</label>
+  &emsp13; <input type="radio" id="rupay" name="pay" value="rupay">
+  <label for="rupay">Rupay</label>
+<input type="radio" id="upi" name="pay" value="upi">
+  <label for="upi">UPI</label><br>
+
+
+
+  <input type="radio" id="ICIC" name="pay" value="ICIC">
+  <label for="ICIC">ICIC</label>
+<input type="radio" id="ptm" name="pay" value="ptm">
+  <label for="ptm">Paytm</label>
+  <input type="radio" id="cod" name="pay" value="cod">
+  <label for="cod">COD</label><br>
+
+
+</fieldset><br>
+	<center><button type="button" class="btn" onclick="alert('Will reach you soon!')">Place Order</button></center>
+
+</fieldset>
+</div>
+</body>
+</html>
+
